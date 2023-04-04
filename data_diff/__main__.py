@@ -461,7 +461,7 @@ def _data_diff(
 
             if json_output:
                 jsonl = json.dumps([op, list(values)])
-                rich.print(f"[{color}]{jsonl}[/{color}]")
+                print(jsonl)
             else:
                 text = f"{op} {', '.join(map(str, values))}"
                 rich.print(f"[{color}]{text}[/{color}]")
